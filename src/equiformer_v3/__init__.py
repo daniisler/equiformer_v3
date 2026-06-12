@@ -1,0 +1,6 @@
+# Register equiformer_v3 models and trainers with fairchem registry
+import equiformer_v3.experimental.models.equiformer_v3.equiformer_v3
+import equiformer_v3.experimental.models.equiformer_v3.equiformer_v3_dens
+import equiformer_v3.experimental.trainers.equiformer_v3_dens_trainer
+import equiformer_v3.experimental.trainers.dens_ase_dataset
+import equiformer_v3.experimental.trainers.oc20_total_energy_lmdb 

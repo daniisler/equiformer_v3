@@ -1,0 +1,36 @@
+[build-system]
+requires = ["uv_build >= 0.10.10, <0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "equiformer_v3"
+version = "0.0.0"
+description = "Equiformer v3"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = []
+
+dependencies = [
+    "ase>=3.22,<4.0",
+    "numpy>=1.26,<3.0",
+    "myplots>=0.1.1",
+    "fairchem-core",
+    "torch==2.4.1",
+    "scipy<1.12",
+    "torchvision",
+    "torchaudio",
+    "torch_geometric",
+    "torch_scatter",
+    "torch_sparse",
+    "torch_cluster",
+    "torch_spline_conv",
+]
+
+[tool.uv.build-backend]
+source-include = ["src"]
+exclude = ["src/equiformer_v3/experimental"]
+
+# UV build
+[tool.uv_build]
+include = ["fairchem/**/*.pyi", "fairchem/py.typed"]
+
