@@ -26,6 +26,12 @@ dependencies = [
     "torch_spline_conv",
 ]
 
+[tool.uv.extra-build-dependencies]
+torch-sparse = ["torch==2.4.1","setuptools"]
+torch-scatter = ["torch==2.4.1","setuptools"]
+torch-cluster = ["torch==2.4.1","setuptools"]
+torch-spline-conv = ["torch==2.4.1","setuptools"]
+
 [tool.uv.build-backend]
 source-include = ["src"]
 exclude = ["src/equiformer_v3/experimental"]
@@ -34,3 +40,5 @@ exclude = ["src/equiformer_v3/experimental"]
 [tool.uv_build]
 include = ["fairchem/**/*.pyi", "fairchem/py.typed"]
 
+[project.urls]
+Repository = "https://github.com/daniisler/equiformer_v3/tree/feature-python-package"
