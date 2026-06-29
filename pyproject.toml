@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "equiformer_v3"
-version = "0.0.1"
+version = "0.0.2"
 description = "Equiformer v3"
 readme = "README.md"
 requires-python = ">=3.11"
